@@ -22,3 +22,8 @@ function reverse(names) {
 }
 
 
+function reverse(coll) {
+  const init = []
+
+  return coll.reduceRight((acc, value) => [...acc, value], init)
+}
